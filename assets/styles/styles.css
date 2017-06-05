@@ -1,0 +1,15 @@
+/* Exercise 3.1 Styles : styles.css			  */
+/* CS597 Multimedia and web Development */
+/*Author: Srilatha Mada                 */
+/*History: 2016-11-09 Created           */
+/****************************************/
+
+
+h1, h2, h3, h4 {
+	font-family: Arial, Verdana, Helvetica, Tahoma, sans-serif;
+}
+p{
+font-family: Georgia, Times, Garamond, "Times New Roman", serif;
+font-size: 12pt;
+line-height=1.5;
+}

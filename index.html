@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html>
+
+<head lang="en-US">
+
+	<meta charset="UTF-8">
+	<meta name="description" content="About Me">
+	<meta name="keywords" content="HTML, Text">
+	<meta name="author" content="Srilatha Mada">
+
+	
+    
+	<title>Welcome - Srilatha Mada</title>
+	
+	<!-- Link to style sheet goes here                -->
+	<link rel="stylesheet" type="text/css" media="all" 				href="assets/styles/main.css"/>
+	<style>
+		
+
+a[href ^= "#"]{
+				background   : url(assets/media/icons/icon_int_10x10.png);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+			/* External Link */
+	
+			a[href ^= "http"] {
+			
+				background   : url(assets/media/icons/icon_ext_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+	
+			a[target=_blank] {
+				background   : url(assets/media/icons/icon_redir_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+	
+			a[href^="mailto:"] {
+				background   : url(assets/media/icons/icon_mail_10x10.png);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+			
+			a[href $=".pdf"]{
+				background   : url(assets/media/icons/icon_pdf_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+				
+			
+			a[href$="docx"]{
+				background   : url(assets/media/icons/icon_doc_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+		#more,
+		#less{
+			color    : orange;
+			cursor   : pointer;
+			cursor   : hand;
+			}
+		#more-vision{
+				display   : none;
+			}
+
+		@media screen {
+		
+	
+			body {
+				width            : 960px;
+				margin           : 10px auto;
+				font             : 10pt/1.5em 			Tahoma,Helvetica,Arial, sans-serif;
+				}
+			figure{
+				float           : left;
+				
+				}
+			figcaption{
+				text-align      : center;
+				
+				}
+			
+			header,section,article,aside,footer {
+				display          : block;
+				}
+		
+				
+			#container {
+				margin            : 0;
+				padding           : 0;
+				}
+			
+			header {
+				margin            : 0;
+				padding           : 0;
+				}
+				
+			header {
+				width             : 100%;
+				margin            : 0 auto;
+				display           : flex;
+				flex-direction    : column; 
+				justify-content   : space-between;
+				}
+			header hgroup {
+				width             : 100%;
+				margin            : 0 auto;
+				display           : flex;
+				flex-direction    : row; 
+				justify-content   : space-between;
+				}
+			header h1 { 
+				padding-left      : 10px;
+				}
+			header h2 { 
+				padding-right     : 10px;}
+			header h3 {
+				display           : none;
+				}
+
+			nav {
+				height            : 30px;
+				width             : 100%;
+				display           : flex;
+				flex-direction    : row; 
+				align-items       : center;
+			}
+			nav ul {
+				margin            : 0;
+				padding           : 0;
+				display           : flex;
+				}
+			nav li {
+				height            : 20px;
+				list-style        : none;
+			}
+			nav a {
+				padding           : 5px 20px;
+				font-size         : 15px;
+				font-weight       : bold;
+				text-decoration   : none;
+				}
+			
+			#wrapper {
+				width           : 100%;
+				display         : flex;
+	
+		-webkit-align-items     : top;
+			 -ms-flex-align     : top;
+				align-items     : top; 
+				}
+				
+			section, aside {
+				vertical-align  : top;
+			}
+			section {
+				width           : 85%;
+				}
+			article {
+				padding         : 0 10px;
+			}
+			section article {
+				margin          : 10px;
+				}
+			aside article {
+				margin           : 10px;
+				}
+				
+			p.print-note {
+				display          : none;
+				}
+			aside ul {
+				list-style       : none;
+				margin           : 5px;
+				padding          : 0;
+				}
+			aside a {
+				text-decoration  : none;
+				}
+				
+			footer {
+				margin          : 0 auto;
+				padding         : 0 10px;
+				height          : 39px;
+	
+				display         : -webkit-flex;
+				display         : -ms-flexbox;
+				display         : flex; 
+	
+		-webkit-justify-content : space-between;
+				   ms-flex-pack : justify;
+				justify-content : space-between; 
+	
+		-webkit-align-items     : center;
+			 -ms-flex-align     : center;
+				align-items     : center;
+				}
+				
+			footer a:link {
+				text-decoration : none;
+			}
+			
+			img {
+				width            : 200px;
+				height           : 200px;
+				}
+		
+			body {			
+				background-color : #338E25; /* color-primary-4 */
+				}
+				
+			#container {
+				background-color  : white;
+				border            : 1px solid black;
+				}
+				
+			header, footer {
+				background-color  : #79CB6C; /* color-primary-0 */
+				color             : #CCF0C6; /* color-primary-1 */
+				}
+			header {
+				border-bottom     : 1px solid #ccc;
+				}			
+			header h1 {
+				color             : #338E25; /* color-primary-4 */
+				}
+				
+			nav a {
+				background-color  : #CCF0C6; /* color-primary-1 */
+				color             : #338E25; /* color-primary-4 */
+				border-right      : 1px solid #79CB6C;  /* color-primary-0 */
+			}
+			body#home_page  a.home_page,
+			body#about_me   a.about_me,
+			body#my_courses a.my_courses,
+			body#contact_me a.contact_me {
+				background-color  : #50AB42; /* color-primary-3 */
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+			
+			section {
+				border-right      : 1px dotted gray;
+				}
+			section article,
+			aside   article {
+				background-color  : #CCF0C6; /* color-primary-1 */
+				border            : 1px solid gray;
+				}
+			article  {
+				color             : #338E25; /* color-primary-4 */
+				}
+				
+			footer {
+				border-top        : 1px solid gray;
+				}
+			footer a {
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+
+			img {
+				background-color : #A2E099; /* color-primary-2 */
+				border           : solid 5px white;
+				}
+				
+		
+			nav a:hover {
+				background-color  : #338E25; /* color-primary-4 */
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+			footer a:hover {
+				text-decoration : underline;
+				}
+	
+		}
+	
+		
+
+		@media screen 
+			      and (max-width : 1024px)
+				  {
+
+				body, a {
+					color          : #338E25; /* 5. color-primary-4 */
+				}
+				
+				#content {
+					flex           : 1;
+					flex-direction : column;
+				}
+				main {
+					flex           : 1;
+				}
+				nav, aside {
+					flex           : 0 0 12em;
+					border         : none; 
+				}
+				nav {
+					border-bottom  : 1px solid #338E25; /* color-primary-4 */
+				}
+				aside {
+					border-top     : 1px solid #338E25; /* color-primary-4 */
+				}
+			}
+			
+			/* iPhone portrait format */
+			@media screen 
+			       and (max-width : 667px)
+				  {
+ 
+			
+				body, a {
+					color : #79CB6C;/*primary color 0*/ 
+				}
+				a {
+					text-decoration : underline;
+					}
+				header hgroup {
+					display         : flex;
+					flex-direction  : column;
+					}
+				footer, nav, aside {
+					display : none;
+				}
+			}
+	@media print {
+		
+			body {
+				margin         :  .5in 1in; 
+				background     :   white;
+				color          :   black;
+				width          :   8.5in;
+				height         :   11in;
+				font           :   12pt/1.2em "Times New Roman", Times, serif;
+				}
+			header {
+				text-align     :  center;
+				margin-bottom  :  .5in;
+				border-bottom  :  1px dotted gray;
+				}
+				
+			nav, aside, footer {
+				display         : none;
+			}
+
+			a {
+				color           :  blue;
+				text-decoration :  underline;
+			}
+
+			a:link:after {
+				content         :  " [" attr(href) "] ";
+				font-size       : .9em;
+			}
+			
+			img {
+				background-color :  #A2E099;
+				border           :  1px solid black;
+				width            :  100px;
+				height           :  100px;
+				}
+
+		}
+
+
+		
+
+	</style>	
+	<script src="assets/scripts/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#more").click(function(){
+			$("#more-vision").fadeIn("slow");
+			});
+			$("#less").click(function(){
+			$("#more-vision").fadeOut("slow");
+			});
+		});
+	</script>
+
+	<!-- Internal styles go here                      -->
+	<!-- Link to JavaScript or jQuery goes here       -->
+	<!-- Internal JavaScript or jQuery code goes here -->
+	
+</head>
+
+<body id="home_page">
+
+	<!-- Outer layer wrapper -->
+	<div id="page">
+
+		<!-- Begin header -->
+		<header>
+
+		   <hgroup>	<!-- Main header                -->
+			<h1>Welcome</h1>
+			<h2>Srilatha Mada</h2>
+		   </hgroup>
+			<!-- Main navigation list -->
+			<nav>
+				<ul>
+					<!-- class name MUST match body id for page -->
+					<li><a href="index.html" class="home_page" >Home Page </a></li>
+					<li><a href="about.html" class="about_me" >About Me  </a></li>
+					<li><a href="courses.html" class="my_courses" >My Courses</a></li>
+					<li><a href="contact.html" class="contact_me" >Contact Me</a></li>
+				</ul>
+			</nav><!-- end nav -->
+		
+		</header><!-- end header -->
+	
+		<!-- Main section content -->
+		<section id="content">
+
+			<!-- Section header - level h2 -->
+			
+	
+			<article id="vision">
+			<h2>Srilatha Mada</h2>	
+				<!-- Article content -->		
+			<div id="floating-img">
+				<figure>
+			
+					<img src="assets/media/images/ProfilePic.jpg" width="150" height="150"/>
+					<figcaption>Srilatha</figcaption>
+				</figure>
+				
+				<p>My name is Srilatha Mada from India. I am married and have two children who are 11 and 7. I have my bachelor's degree in Electronics and Communication Engineering from JNTU Hyderabad. I had worked as a Database UI Developer for one year in 2002-2003 and quit my job for the family. Now after makiing sure my kids are independent and are responsible, I decided to resurrect my career in IT sector. I know there is a lot of changes and updates that have taken place in the industry, and to keep up with the always upgrading indutry, I decided to enroll myself into MS program. At this time I came across a friend who has graduated from Rivier, and made me aware of this university. That is when I submitted my application for MS in Computer Science program and got the admission.</br><strong>More&nbsp;<span id="more">&raquo;</span></strong></p> 
+				
+				<div id="more-vision">
+					<p> I have started my courses in Fall 2016. I completed Networking Technologies with Prof.Khasnabish and earned A grade. I am presently doing Multi Media and Web Development with <abbr title="Professor">Prof</abbr>.Cupak in term 2. I am also doing Computer Science Fundamentals with <abbr title="Professor">Prof</abbr>.Wilkes ,which is a 14 week course.</p>
+			
+
+					<p>I am very interested to work in Databases and with Big data. For that I am also learning Hadoop which is the latest technology to handle large amounts of data in Terra bytes. I am also learning Python scripting language as I feel the more scripting languages we know, the better chances we have, to get a job. Moreover I like to do programming a lot and this just amuses me and also enhances my skills. I am also looking to do my internship during my study, so I can learn various technologies in real time. Anything I do, I want to make sure I enjoy it and am happy with it so I can perform to the best of my abilities. I truly believe that one can excel in a field only when he/she enjoys it.</br><strong>Less&nbsp;<span id="less">&laquo;</span></strong> </p>
+
+					<p>One of my favorite quotes is...,<blockquote>A diamond is merely a lump of coal that did well under pressure!! </blockquote>.</p>
+				</div><!-- end #more_intro -->
+			</div>
+		
+			</article><!-- end article #intro -->
+	
+		</section><!-- end section -->
+	</div><!-- end #page -->
+
+		
+		<!-- Main footer -->
+		<footer>
+	
+			<h3>Copyright&nbsp;&copy;&nbsp; 2016 
+			<a href="mailto:smada@rivier.edu">smada@rivier.edu	</a></h3>
+		
+			<h4>CS597 Multimedia and Web Development <span>				BH2 FA16</span></h4>
+		
+		</footer><!-- end footer -->
+
+
+	
+</body>
+
+</html>

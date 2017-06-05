@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html>
+
+<head lang="en-US">
+
+<meta charset="UTF-8">
+<meta name="description" content="About Me">
+<meta name="keywords" content="HTML, Text">
+<meta name="author" content="Srilatha Mada">
+	
+	<title>Srilatha Mada - Contact Me</title>
+	
+	<!-- Link to master style sheet goes here         -->
+
+	<link rel="stylesheet" type="text/css" media="all" 				href="assets/styles/main.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/styles/social-buttons.css"/>
+
+	<style type="text/css">
+
+		
+
+a[href ^= "#"]{
+				background   : url(assets/media/icons/icon_int_10x10.png);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+			/* External Link */
+	
+			a[href ^= "http"] {
+			
+				background   : url(assets/media/icons/icon_ext_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+	
+			a[target=_blank] {
+				background   : url(assets/media/icons/icon_redir_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+	
+			a[href^="mailto:"] {
+				background   : url(assets/media/icons/icon_mail_10x10.png);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+			
+			a[href $=".pdf"]{
+				background   : url(assets/media/icons/icon_pdf_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+				
+			
+			a[href$="docx"]{
+				background   : url(assets/media/icons/icon_doc_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}	
+
+		@media screen {
+		
+	
+			body {
+				width            : 960px;
+				margin           : 10px auto;
+				font             : 10pt/1.5em 			Tahoma,Helvetica,Arial, sans-serif;
+				}
+			textarea{
+					width        : 100%;
+				}
+				
+
+			header,section,article,aside,footer {
+				display          : block;
+				}
+				
+			#container {
+				margin            : 0;
+				padding           : 0;
+				}
+			
+			header {
+				margin            : 0;
+				padding           : 0;
+				}
+				
+			header {
+				width             : 100%;
+				margin            : 0 auto;
+				display           : flex;
+				flex-direction    : column; 
+				justify-content   : space-between;
+				}
+			header hgroup {
+				width             : 100%;
+				margin            : 0 auto;
+				display           : flex;
+				flex-direction    : row; 
+				justify-content   : space-between;
+				}
+			header h1 { 
+				padding-left      : 10px;
+				}
+			header h2 { 
+				padding-right     : 10px;}
+			header h3 {
+				display           : none;
+				}
+
+			nav {
+				height            : 30px;
+				width             : 100%;
+				display           : flex;
+				flex-direction    : row; 
+				align-items       : center;
+			}
+			nav ul {
+				margin            : 0;
+				padding           : 0;
+				display           : flex;
+				}
+			nav li {
+				height            : 20px;
+				list-style        : none;
+			}
+			nav a {
+				padding           : 5px 20px;
+				font-size         : 15px;
+				font-weight       : bold;
+				text-decoration   : none;
+				}
+			
+			#wrapper {
+				width           : 100%;
+				display         : flex;
+	
+		-webkit-align-items     : top;
+			 -ms-flex-align     : top;
+				align-items     : top; 
+				}
+				
+			section, aside {
+				vertical-align  : top;
+			}
+			section {
+				width           : 85%;
+				}
+			article {
+				padding         : 0 10px;
+			}
+			section article {
+				margin          : 10px;
+				}
+			aside article {
+				margin           : 10px;
+				}
+				
+			p.print-note {
+				display          : none;
+				}
+			aside ul {
+				list-style       : none;
+				margin           : 5px;
+				padding          : 0;
+				}
+			aside a {
+				text-decoration  : none;
+				}
+				
+			footer {
+				margin          : 0 auto;
+				padding         : 0 10px;
+				height          : 39px;
+	
+				display         : -webkit-flex;
+				display         : -ms-flexbox;
+				display         : flex; 
+	
+		-webkit-justify-content : space-between;
+				   ms-flex-pack : justify;
+				justify-content : space-between; 
+	
+		-webkit-align-items     : center;
+			 -ms-flex-align     : center;
+				align-items     : center;
+				}
+				
+			footer a:link {
+				text-decoration : none;
+			}
+			
+			img {
+				width            : 200px;
+				height           : 200px;
+				}
+		
+			body {			
+				background-color : #338E25; /* color-primary-4 */
+				}
+				
+			#container {
+				background-color  : white;
+				border            : 1px solid black;
+				}
+				
+			header, footer {
+				background-color  : #79CB6C; /* color-primary-0 */
+				color             : #CCF0C6; /* color-primary-1 */
+				}
+			header {
+				border-bottom     : 1px solid #ccc;
+				}			
+			header h1 {
+				color             : #338E25; /* color-primary-4 */
+				}
+				
+			nav a {
+				background-color  : #CCF0C6; /* color-primary-1 */
+				color             : #338E25; /* color-primary-4 */
+				border-right      : 1px solid #79CB6C;  /* color-primary-0 */
+			}
+			body#home_page  a.home_page,
+			body#about_me   a.about_me,
+			body#my_courses a.my_courses,
+			body#contact_me a.contact_me {
+				background-color  : #50AB42; /* color-primary-3 */
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+			
+			section {
+				border-right      : 1px dotted gray;
+				}
+			section article,
+			aside   article {
+				background-color  : #CCF0C6; /* color-primary-1 */
+				border            : 1px solid gray;
+				}
+			article  {
+				color             : #338E25; /* color-primary-4 */
+				}
+				
+			footer {
+				border-top        : 1px solid gray;
+				}
+			footer a {
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+
+			img {
+				background-color : #A2E099; /* color-primary-2 */
+				border           : solid 5px white;
+				}
+				
+		
+			nav a:hover {
+				background-color  : #338E25; /* color-primary-4 */
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+			footer a:hover {
+				text-decoration : underline;
+				}
+	
+		}
+			@media screen 
+			       and (max-width : 1024px)
+				  {
+
+				body, a {
+					color          : #338E25; /* 5. color-primary-4 */
+				}
+				
+				#content {
+					flex           : 1;
+					flex-direction : column;
+				}
+				main {
+					flex           : 1;
+				}
+				nav, aside {
+					flex           : 0 0 12em;
+					border         : none; 
+				}
+				nav {
+					border-bottom  : 1px solid #338E25; /* color-primary-4 */
+				}
+				aside {
+					border-top     : 1px solid #338E25; /* color-primary-4 */
+				}
+			}
+			
+			/* iPhone portrait format */
+			@media screen 
+			        and (max-width : 667px)
+				  {
+ 
+			
+				body, a {
+					color : #79CB6C;/*primary color 0*/ 
+				}
+				a {
+					text-decoration : underline;
+					}
+				header hgroup {
+					display         : flex;
+					flex-direction  : column;
+					}
+				footer, nav, aside {
+					display : none;
+				}
+			}
+
+		@media print {
+		
+			body {
+				margin         :  .5in 1in; 
+				background     :   white;
+				color          :   black;
+				width          :   8.5in;
+				height         :   11in;
+				font           :   12pt/1.2em "Times New Roman", Times, serif;
+				}
+			header {
+				text-align     :  center;
+				margin-bottom  :  .5in;
+				border-bottom  :  1px dotted gray;
+				}
+				
+			nav, aside, footer{
+				display         : none;
+			}
+			input[type=color]{
+				display         : none;
+			}
+			input[type=text]{
+				display         : none;
+			}
+
+			input[type=email]{
+				display         : none;
+			}
+
+			input[type=radio]{
+				display         : none;
+			}
+			
+
+			input[type=checkbox] {
+				display         : none;
+			}
+			
+
+
+			a {
+				color           :  blue;
+				text-decoration :  underline;
+			}
+
+			a:link:after {
+				content         :  " [" attr(href) "] ";
+				font-size       : .9em;
+			}
+			
+			img {
+				background-color :  #A2E099;
+				border           :  1px solid black;
+				width            :  100px;
+				height           :  100px;
+				}
+
+		}
+
+
+</style>
+
+	<!-- Internal styles go here                      -->
+	<!-- Link to JavaScript or jQuery goes here       -->
+	<!-- Internal JavaScript or jQuery code goes here -->
+	
+</head>
+
+<body id="contact_me">
+
+	<!-- Outer layer wrapper -->
+	<div id="page">
+
+		<!-- Begin header -->
+		<header>
+			<hgroup>
+			<!-- Main header                -->
+			<h1>Contact Me</h1>
+			<h2>Srilatha Mada</h2>
+			</hgroup>
+		
+			<!-- Main navigation list -->
+			<nav>
+				<ul>
+					<!-- class name must match body id for page -->
+							<li><a href="index.html" class="home_page" >Home Page </a></li>
+					<li><a href="about.html" class="about_me" >About Me  </a></li>
+					<li><a href="courses.html" class="my_courses" >My Courses</a></li>
+					<li><a href="contact.html" class="contact_me" >Contact Me</a></li>
+				</ul>
+			</nav><!-- end nav -->
+		
+		</header><!-- end header -->
+	
+		<!-- Main section and aside content -->
+		<div id="content">
+	
+			<section>
+	
+				<h2>Submission Information</h2>
+		
+				<article>
+				
+						
+					<!-- Form with mailto action -->
+						
+						<!-- Field set contact information -->
+							
+						<p>Please complete the information below, 
+						and click the "Submit" button when you are done.</p>
+						<form 										action="mailto:smada@rivier.edu"
+					subject="contacting"
+					method="POST"	
+					enctype="text/plain"
+					id="contactme">
+				
+					        <fieldset>
+							<legend>Contact Information</legend>	
+						<!-- Name text input -->
+							<p>Name:
+							<input type="text" size="40" name="contact name" /></p>
+						
+
+						<!-- email input -->
+							<p>Email:										<input type="email" name="email" size="40"/></p>							
+						   </fieldset>	
+						<!-- end field set -->
+
+						<!-- Date input with pattern -->
+						<p>Date Of Birth (mm/dd/yyyy)</p>						
+						<input type="date" name="dob"/>
+						
+						<!-- Text input -->
+						<p>What is your Favourite Color</p>
+						<input type="color" name="color">
+						
+						<!-- Drop-down list -->
+						<p>How did you hear about me?
+</p>
+						<select name="source">
+							<option value="Website" selected="selected">Website</option>
+							<option value="Newspaper">Newspaper</option>
+							<option value="Friends">Friends</option>
+							<option value="Email">Email</option>
+						</select>
+						<!-- Radio Buttons -->
+						<p>Would you visit again?</p>
+						<input type="radio" name="like" value="yes" checked="checked"/><lable>Yes</lable>
+						<input type="radio" name="like" value="no"/><lable>No</lable>						
+						<!-- Text box -->
+						<p>Comments</p>
+						<textarea name="comments" columns="100" rows="4" value="Enter your comments"></textarea>				
+						<!-- Checkbox with subscribe as default -->
+						<p>Sign me up for email updates:</p>
+						<input type="checkbox" name="subscribe" value="subscribe" checked="checked"/><lable>Yes</lable>
+						<input type="checkbox" name="subscribe" value="do not subscribe"/><lable>No</lable><br/>
+
+						<!-- Hidden input field with course name section year and term -->
+						<input type="hidden" name="course details" value="CS597 MultiMedia and Web Design BH2 FA16 2"/><br/> 		
+						<!-- Submit Information button -->
+						<input type="submit" name="submit" value="Submit"/>
+					</form>				
+					<!-- end form -->
+			
+						
+				</article><!-- end article #ytd -->
+						
+			</section><!-- end section -->
+	
+			<!-- Sidebar -->
+			<aside>
+	
+				<!-- Aside header - level h2 -->
+				<h2>Social Sites</h2>
+				<p>You can also contact me on the following social sites</p>
+		
+				<!-- Non-navigation links to other information -->
+				<ul>
+					<li><a href="http://www.facebook.com/srilathagummidi" class="sb facebook text blue" target="_blank">Facebook</a></li>
+					<li><a href="https://www.linkedin.com/in/srilatha-mada-8b5b22131" class="sb text blue linkedin" target="_blank">Linkedin</a></li>
+					
+				</ul>
+		
+			</aside><!-- end aside -->
+	
+		</div><!-- end #content -->
+	
+	</div><!-- end #page -->
+	<!-- Main footer -->
+		<footer>
+	
+			<h3>Copyright&nbsp;&copy;&nbsp; 2016 
+			<a href="mailto:smada@rivier.edu">Srilatha Mada				</a></h3>
+		
+			<h4>CS597 Multimedia and Web Development <span>				BH2 FA16</span></h4>
+		
+		</footer><!-- end footer -->
+
+
+	
+
+</body>
+
+</html>

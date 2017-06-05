@@ -1,0 +1,568 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="About Me">
+<meta name="keywords" content="HTML, Text">
+<meta name="author" content="Srilatha Mada">
+<title>About Me</title>
+<link rel="stylesheet" type="text/css" media="all" 				href="assets/styles/main.css"/>
+<style type="text/css">
+	
+	    		#more-family,
+    			#less-family,
+			#more-me,
+			#less-me,
+			#more-school,
+			#less-school,
+			#view-video,
+			#close-video {
+        			color : orange;
+        			cursor: pointer; 
+        			cursor: hand;
+     				}
+    			#family,
+			#me,
+			#school,
+			#video {
+        			display : none; /* Hide details */
+     				}
+			video{
+				width  : 100%;
+				object : content;
+				}
+			figure{
+				float     : left;
+				display   : flex;
+				flex-direction : column;
+				text-align : center;
+				}
+			a[href ^= "#"]{
+				background   : url(assets/media/icons/icon_int_10x10.png);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+			/* External Link */
+	
+			a[href ^= "http"] {
+			
+				background   : url(assets/media/icons/icon_ext_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+	
+			a[target=_blank] {
+				background   : url(assets/media/icons/icon_redir_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+				}
+
+	
+			a[href^="mailto:"] {
+				background   : url(assets/media/icons/icon_mail_10x10.png);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+			
+			a[href $=".pdf"]{
+				background   : url(assets/media/icons/icon_pdf_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+				
+			
+			a[href$="docx"]{
+				background   : url(assets/media/icons/icon_doc_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+
+			@media screen {
+		
+	
+			body {
+				
+				width            : 960px;
+				margin           : 10px auto;
+				font             : 10pt/1.5em 			Tahoma,Helvetica,Arial, sans-serif;
+				}
+				
+
+			header,section,article,aside,footer {
+				display          : block;
+				}
+				
+			#container {
+				margin            : 0;
+				padding           : 0;
+				}
+			
+			header {
+				margin            : 0;
+				padding           : 0;
+				}
+				
+			header {
+				width             : 100%;
+				margin            : 0 auto;
+				display           : flex;
+				flex-direction    : column; 
+				justify-content   : space-between;
+				}
+			header hgroup {
+				width             : 100%;
+				margin            : 0 auto;
+				display           : flex;
+				flex-direction    : row; 
+				justify-content   : space-between;
+				}
+			header h1 { 
+				padding-left      : 10px;
+				}
+			header h2 { 
+				padding-right     : 10px;}
+			header h3 {
+				display           : none;
+				}
+
+			nav {
+				height            : 30px;
+				width             : 100%;
+				display           : flex;
+				flex-direction    : row; 
+				align-items       : center;
+			}
+			nav ul {
+				margin            : 0;
+				padding           : 0;
+				display           : flex;
+				}
+			nav li {
+				height            : 20px;
+				list-style        : none;
+			}
+			nav a {
+				padding           : 5px 20px;
+				font-size         : 15px;
+				font-weight       : bold;
+				text-decoration   : none;
+				}
+			
+			#wrapper {
+				width           : 100%;
+				display         : flex;
+	
+		-webkit-align-items     : top;
+			 -ms-flex-align     : top;
+				align-items     : top; 
+				}
+				
+			section, aside {
+				vertical-align  : top;
+			}
+			section {
+				width           : 85%;
+				}
+			article {
+				padding         : 0 10px;
+			}
+			section article {
+				margin          : 10px;
+				}
+			aside article {
+				margin           : 10px;
+				}
+				
+			p.print-note {
+				display          : none;
+				}
+			aside ul {
+				list-style       : none;
+				margin           : 5px;
+				padding          : 0;
+				}
+			aside a {
+				text-decoration  : none;
+				}
+				
+			footer {
+				margin          : 0 ;
+				padding         : 0 ;
+				height          : 39px;
+				width           : 100%;
+				display         : -webkit-flex;
+				display         : -ms-flexbox;
+				display         : flex; 
+		-webkit-justify-content : space-between;
+				   ms-flex-pack : justify;
+				justify-content : space-between; 
+	
+		-webkit-align-items     : center;
+			 -ms-flex-align     : center;
+				align-items     : center;
+	
+	
+				}
+				
+			footer a:link {
+				text-decoration : none;
+			}
+			
+			img {
+				width            : 200px;
+				height           : 200px;
+				}
+		
+			body {			
+				background-color : #338E25; /* color-primary-4 */
+				}
+				
+			#container {
+				background-color  : white;
+				border            : 1px solid black;
+				}
+				
+			header, footer {
+				background-color  : #79CB6C; /* color-primary-0 */
+				color             : #CCF0C6; /* color-primary-1 */
+				}
+			header {
+				border-bottom     : 1px solid #ccc;
+				}			
+			header h1 {
+				color             : #338E25; /* color-primary-4 */
+				}
+				
+			nav a {
+				background-color  : #CCF0C6; /* color-primary-1 */
+				color             : #338E25; /* color-primary-4 */
+				border-right      : 1px solid #79CB6C;  /* color-primary-0 */
+			}
+			
+			body#home_page  a.home_page,
+			body#about_me   a.about_me,
+			body#my_courses a.my_courses,
+			body#contact_me a.contact_me {
+				background-color  : #50AB42; /* color-primary-3 */
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+			
+			section {
+				border-right      : 1px dotted gray;
+				}
+			section article,
+			aside   article {
+				background-color  : #CCF0C6; /* color-primary-1 */
+				border            : 1px solid gray;
+				}
+			article  {
+				color             : #338E25; /* color-primary-4 */
+				}
+				
+			footer {
+				border-top        : 1px solid gray;
+				}
+			footer a {
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+
+			img {
+				background-color : #A2E099; /* color-primary-2 */
+				border           : solid 5px white;
+				}
+				
+			#floating-img img {
+				background-color : #A2E099; /* color-primary-2 */
+				border           : solid 5px white;
+				float			 : left;
+				margin-right	 : 10px;
+				}
+
+			.clear {
+  				clear: both;
+  				}
+  
+			
+			nav a:hover {
+				background-color  : #338E25; /* color-primary-4 */
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+			footer a:hover {
+				text-decoration : underline;
+				}
+	
+			}
+		@media screen 
+			       and (max-width : 1024px)
+				  {
+
+				body, a {
+					color          : #338E25; /* 5. color-primary-4 */
+				}
+				
+				#content {
+					flex           : 1;
+					flex-direction : column;
+				}
+				main {
+					flex           : 1;
+				}
+				nav, aside {
+					flex           : 0 0 12em;
+					border         : none; 
+				}
+				nav {
+					border-bottom  : 1px solid #338E25; /* color-primary-4 */
+				}
+				aside {
+					border-top     : 1px solid #338E25; /* color-primary-4 */
+				}
+			}
+			
+			/* iPhone portrait format */
+			@media screen 
+			        and (max-width : 667px)
+				  {
+ 
+			
+				body, a {
+					color : #79CB6C;/*primary color 0*/ 
+				}
+				a {
+					text-decoration : underline;
+					}
+				header hgroup {
+					display         : flex;
+					flex-direction  : column;
+					}
+				footer, nav, aside {
+					display : none;
+				}
+			}
+
+		@media print {
+		
+			body {
+				margin         :  .5in 1in; 
+				background     :   white;
+				color          :   black;
+				width          :   8.5in;
+				height         :   11in;
+				font           :   12pt/1.2em "Times New Roman", Times, serif;
+				}
+			header {
+				text-align     :  center;
+				margin-bottom  :  .5in;
+				border-bottom  :  1px dotted gray;
+				}
+				
+			nav, aside, footer {
+				display         : none;
+			}
+
+			a {
+				color           :  blue;
+				text-decoration :  underline;
+			}
+
+			a:link:after {
+				content         :  " [" attr(href) "] ";
+				font-size       : .9em;
+			}
+			
+			img {
+				background-color :  #A2E099;
+				border           :  1px solid black;
+				width            :  100px;
+				height           :  100px;
+				}
+
+		}
+
+		
+
+
+
+</style>
+<script src="assets/scripts/jquery-1.12.3.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+	    $("#more-family").click(function(){
+      	$("#family").show();
+    });
+    	$("#less-family").click(function(){
+		 $("#family").fadeOut("slow");
+    });
+	$("#more-me").click(function(){
+      	$("#me").fadeIn("slow");
+	});
+	$("#less-me").click(function(){
+      	$("#me").fadeOut("slow");
+	});
+	$("#more-school").click(function(){
+      	$("#school").show();
+	});
+	$("#less-school").click(function(){
+      	$("#school").fadeOut("slow");
+	});
+	$("#view-video").click(function(){
+      	$("#video").show();
+	});
+	$("#close-video").click(function(){
+      	$("#video").fadeOut("slow");
+	});
+
+    });
+
+  
+</script>
+
+</head>
+<body id="about_me">
+      <div id="page">
+	 <header>
+	   <hgroup>
+		<h1>About Me</h1>
+		<h2>Srilatha Mada</h2>
+	   </hgroup>
+		<nav>
+		   <ul>
+					<li><a href="index.html" class="home_page" >Home Page </a></li>
+					<li><a href="about.html" class="about_me" >About Me  </a></li>
+					<li><a href="courses.html" class="my_courses" >My Courses</a></li>
+					<li><a href="contact.html" class="contact_me" >Contact Me</a></li>
+		   </ul>
+	     </nav>
+	</header>
+	<div id="content">
+	<section>
+	<article>
+		<h1>About Me</h1>
+		<p>Me and my family</p>
+		<h3>Me</h3>
+		<p>I am from Rajahmundry,a historical town in Andhra Pradesh, India. I am born and brought up in Bhadrachalam, a famous pilgrimage in Andhra. The Rama temple in Bhdrachalam and the river godavari flowing around the temple are an amazing sight to see from the bridge across the river. To learn more about <a href="http://www.bhadrachalarama.org/" target="_blank">Bhadrachalam </a> </br><strong>Read More&nbsp;<span id="more-me">&raquo;</span></strong></p>
+		<div id="me">
+		<p>I like to travel during Dussehra vacation as the temperatures in India are moderate in October and we have 10 days of vacation.In India I&rsquo;ve been to many places in India like Kolkatta, Chennai, Mumbai, Bangalore, Munnar, Ooty, etc. I have also visited Malaysia and Andaman Islands. My favorite trip was to Darjeeling which is in West Bengal, India. It is a hill station and the Himalayan ranges are visible from here.</p>
+		<div id="floating-img">
+		<figure>
+		<img src="assets/media/images/diwali.jpg" />
+			<figcaption>Diwali</figcaption>
+		</figure>
+<p>I like to spend time with friends and family. I am pious and am a devotee to Lord Shiva and Lord Venkateshwar Swamy. I like to celebrate festivals in the most traditional ways. My favorite festivals are Diwali, Holi, Vara lakshmi Pooja. We derss up in traditional attires like sarees, lehengas with lots of jewellery  for festivals. I like to read Magazines, the Cook Books and Recipe Books. I also have a taste for arts and crafts and would enjoy knitting and doing embroidery in my liesure.<br/><strong>Less&nbsp;<span id="less-me">&laquo;</span></strong></p>
+		</div>
+		
+		<div class="clear"></div>
+		</div>
+	</article>
+	<article>
+		<h3>Family</h3>
+		   <div id="floating-img">
+		<figure>
+			<p> <img src="assets/media/images/my_family.jpg" alt="image" />
+		<figcaption>My Family</figcaption>
+		</figure>
+			WE are a family of four, my husband,my two lovely kids and I. My family back in India is very big and very interesting.
+			<p>My husband, Daya, is a QA Manager at Verizon, Waltham. He is a hard-working man who believes that hardwork always comes before success. He is born and brought up in Bandarlanka, a small town in coastal Andhra Pradesh in India. This area is called Konaseema which is very beautiful with lots of coconut trees along the roads and canals flowing along one side of the road. Kaja, a delicious sweet made of flour,ghee and sugar, is the speciality of this place and my husband loves this sweet. Anybody who goes to konaseema can not leave without tasting seafood, especially fish and shrimp.<br/>&nbsp;<strong>Read more&nbsp;<span id="more-family">&raquo;</span></strong> </p>
+			<div id="family">
+			<p>I have two lovely children. My daughter&rsquo;s name is Navya. She is 11 years old and is in her 7<sup>th</sup> grade. My son&rsquo;s name is Daiwik. He is in his 2<sup>nd</sup> grade. They like to have pets, but I don&rsquo;t let them have any as I feel they are still not responsible enough to take care of the pets.
+			
+	
+	
+		<h1>Video of my son in Altitute-Trampolene Park
+		<strong>&nbsp;<span id="view-video">&raquo;</span></strong></h1>
+		<div id="video">
+		<article>
+			
+		   	<video
+				id="movie" width="640" height="360" 
+				preload 											controls 
+				src="assets/media/videos/altitude.mp4"
+				poster="assets/media/images/1st_grade.jpg">Your Browser does not support the video. 
+		</video>
+		
+		<p><a href="http://www.altitudeparkma.com/Altitude-Park-Amenities" target="_blank">Activities in altitude</a></p>
+	    <strong>Close&nbsp;<span id="close-video">&laquo;</span></strong></article>
+	   </div>
+
+			<p>My father retired from service as Deputy Director in ITC PSPD , Bhadrachalam. He is a very hardworking, and sincere person who along with his work likes to spend some quality time with family and friends. He is a good sports person and was a district level champion in Table Tennis. He likes traveling to places in and outside India.</p>
+			
+			<p>My mother is a home maker. She is a lovely lady who follows and teaches us to respect elders. She loves designing dresses for me and sewed most of my dresses in my childhood. She is continuing to design dresses for my daughter, Navya, too. She likes to host parties and get-togethers.</p>
+			<p>I have a younger brother who is a software engineer in Microsoft in Hyderabad, India. He has a lovely wife and cute little daughter. My niece loves shoes and dressing in Indian traditional attire, Ghagra Choli. She has just turned 3 and started to go to school. She likes to sing songs.
+			&nbsp;<strong>Less&nbsp;<span id="less-family">&laquo;</span></strong></p>
+			</div>
+		<div class="clear"></div>
+
+			</div>
+	</article>
+	
+	<article>
+		<h3>School</h3>
+			<p>I have done my Engineering in Electronics and communications from Sree Vidyaniketan Engineering College, Tirupathi, Andhra Pradesh, India in 2002. My college was affiliated to JNTU Hyderabad but now it is autonomous college.<br/><strong>Read More&nbsp;<span id="more-school">&raquo;</span></strong></p>
+		<div id="school">
+		<div id="floating-img">
+		  <figure>
+		    <img src="assets/media/images/fashion_show.jpg"/>
+			<figcaption>Fashion show in college</figcaption>
+		  </figure>	
+			<p>My favourite courses in my under graduate program was Electronic circuits , Microprocessors, C programming language to name a few. I was always interested in learning programming languages and thoroughly enjoyed programming in both high level and  low level languages during my under graduate. Along with academics I also showed a lot of interest in extra curricular activities like basketball, plays and stage shows.
+</p>
+			<p>I have come to Rivier University to study Masters in Computer Science. I want to esteblish my career in Software industry and hope that this Masters degree would guide me to reach my goal. I have a friend who has graduated from Rivier and I came to know about the University from her. I toured the university and was impressed by all the facilities and it being in a comfortably commutable distance has attracted me . Hence I am here pursuing my Graduate program.</p>
+			<p>As I said, I would like to become a Software Engineer and using all my knowledge that I attain in my graduate studies and from external sources creatively, I would like to develop applications to make this already easy life even more easy.<br/><strong>Less&nbsp;<span id="less-school">&laquo;</span></strong></p>
+		</div>
+	<div class="clear"></div>
+	</div>
+	</article>
+	<article>
+		<h3>Hobbies</h3>
+		<div id="floating-img">
+		<figure>
+		<img src="assets/media/images/fall_2015.jpg"/>
+			<figcaption>Fall Photography in NH</figcaption>
+		</figure>
+			<p>I like to read books, play tennis and badminton, and do handicrafts. I love travel and take a lot of photographs which would remind us of the sweet memories of our travel and also bring back the lost memories. I love the seasonal changes here in US and would not miss to visit The White Mountains in New Hampshire for foliage.</p>
+			<p>I love melodies of Lata Mangeshkar. As a kid I would always go to bed only with some melodious songs playing in my CD player.I also love to dance, especially to the bollywood numbers and would never miss the opportunity to dance.</p>
+		</div>
+		<div class="clear"></div>
+	 <h2>Audio - My Favourite Song</h2>
+		<p><a href="songs.html" target="_blank">Aaja Sanam - Lata Mangeshkar</a></p>
+	
+
+	</article>
+	</section>
+	
+	<aside>
+	   <article>
+		<h2>Other Information</h2>
+			
+			<ul>
+				<li><a href="http://wikitravel.org/en/Rajahmundry" target="_blank">Hometown-Rajahmundry</a></li>
+				<li><a href="http://www.bbc.co.uk/religion/religions/hinduism/" target="_blank">Religion-Hinduism</a></li>
+				<li><a href="pictures.html" target="_blank">More Pictures</a>
+			</ul>
+	</article>
+	
+	</aside>
+</div><!-- end #page -->
+
+		
+		<!-- Main footer -->
+		<footer>
+	
+			<h3>Copyright&nbsp;&copy;&nbsp; 2016 
+			<a href="mailto:smada@rivier.edu">smada@rivier.edu	</a></h3>
+		
+			<h4>CS597 Multimedia and Web Development <span>				BH2 FA16</span></h4>
+		
+		</footer><!-- end footer -->
+	
+</body>
+</html>

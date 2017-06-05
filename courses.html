@@ -1,0 +1,552 @@
+<!DOCTYPE HTML>
+<html>
+
+<head lang="en-US">
+
+	<meta charset="UTF-8">
+	<meta name="description" content="About Me">
+	<meta name="keywords" content="HTML, Text">
+	<meta name="author" content="Srilatha Mada">
+
+	<title>Courses - Srilatha Mada</title>
+	
+	<!-- Link to master style sheet goes here         -->
+
+	<link rel="stylesheet" type="text/css" media="all" 				href="assets/styles/main.css"/>
+
+	<!-- Internal styles go here                      -->
+
+	<style>
+  	
+	
+
+a[href ^= "#"]{
+				background   : url(assets/media/icons/icon_int_10x10.png);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+			/* External Link */
+	
+			a[href ^= "http"] {
+			
+				background   : url(assets/media/icons/icon_ext_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+	
+			a[target=_blank] {
+				background   : url(assets/media/icons/icon_redir_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+	
+			a[href^="mailto:"] {
+				background   : url(assets/media/icons/icon_mail_10x10.png);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+			
+			a[href $=".pdf"]{
+				background   : url(assets/media/icons/icon_pdf_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+				
+			
+			a[href$="docx"]{
+				background   : url(assets/media/icons/icon_doc_10x10.gif);
+				background-repeat : no-repeat;
+				background-position : right center;
+				padding-right : 12px;
+			}
+
+	table {
+  		border-collapse  : collapse;
+  		font-family      : Arial, Verdana, Tahoma, sans-serif;
+  		font-size        : 10pt;
+  	}
+  	td, th {
+  		border           : 1px solid #999;
+  		padding          : 0.5rem;
+  		text-align       : left;
+	}
+	caption {
+		font-weight      : bold;
+		padding          : 5px;
+	}
+	td {
+  		text-align       : right;
+	}
+	table thead th {
+		background-color : #79CB6C;
+		color            : black;
+	}
+	table tbody tr:nth-child(even) {
+		background-color : #A2E099;
+	}
+
+
+
+
+	@media screen {
+			body {
+				width            : 960px;
+				margin           : 10px auto;
+				font             : 10pt/1.5em 			Tahoma,Helvetica,Arial, sans-serif;
+				}
+			header,section,article,aside,footer {
+				display          : block;
+				}
+			#container {
+				margin            : 0;
+				padding           : 0;
+				}
+			
+			header {
+				margin            : 0;
+				padding           : 0;
+				}
+				
+			header {
+				width             : 100%;
+				margin            : 0 auto;
+				display           : flex;
+				flex-direction    : column; 
+				justify-content   : space-between;
+				}
+			header hgroup {
+				width             : 100%;
+				margin            : 0 auto;
+				display           : flex;
+				flex-direction    : row; 
+				justify-content   : space-between;
+				}
+			header h1 { 
+				padding-left      : 10px;
+				}
+			header h2 { 
+				padding-right     : 10px;}
+			header h3 {
+				display           : none;
+				}
+
+			nav {
+				height            : 30px;
+				width             : 100%;
+				display           : flex;
+				flex-direction    : row; 
+				align-items       : center;
+			}
+			nav ul {
+				margin            : 0;
+				padding           : 0;
+				display           : flex;
+				}
+			nav li {
+				height            : 20px;
+				list-style        : none;
+			}
+			nav a {
+				padding           : 5px 20px;
+				font-size         : 15px;
+				font-weight       : bold;
+				text-decoration   : none;
+				}
+			
+			#wrapper {
+				width           : 100%;
+				display         : flex;
+	
+		-webkit-align-items     : top;
+			 -ms-flex-align     : top;
+				align-items     : top; 
+				}
+				
+			section, aside {
+				vertical-align  : top;
+			}
+			section {
+				width           : 85%;
+				}
+			article {
+				padding         : 0 10px;
+			}
+			section article {
+				margin          : 10px;
+				}
+			aside article {
+				margin           : 10px;
+				}
+				
+			p.print-note {
+				display          : none;
+				}
+			aside ul {
+				list-style       : none;
+				margin           : 5px;
+				padding          : 0;
+				}
+			aside a {
+				text-decoration  : none;
+				}
+				
+			footer {
+				margin          : 0 auto;
+				padding         : 0 10px;
+				height          : 39px;
+				display         : -webkit-flex;
+				display         : -ms-flexbox;
+				display         : flex; 
+	
+		-webkit-justify-content : space-between;
+				   ms-flex-pack : justify;
+				justify-content : space-between; 
+	
+		-webkit-align-items     : center;
+			 -ms-flex-align     : center;
+				align-items     : center;
+				}
+				
+			footer a:link {
+				text-decoration : none;
+			}
+			
+			img {
+				width            : 200px;
+				height           : 200px;
+				}
+		
+			body {			
+				background-color : #338E25; /* color-primary-4 */
+				}
+				
+			#container {
+				background-color  : white;
+				border            : 1px solid black;
+				}
+				
+			header, footer {
+				background-color  : #79CB6C; /* color-primary-0 */
+				color             : #CCF0C6; /* color-primary-1 */
+				}
+			header {
+				border-bottom     : 1px solid #ccc;
+				}			
+			header h1 {
+				color             : #338E25; /* color-primary-4 */
+				}
+				
+			nav a {
+				background-color  : #CCF0C6; /* color-primary-1 */
+				color             : #338E25; /* color-primary-4 */
+				border-right      : 1px solid #79CB6C;  /* color-primary-0 */
+			}
+			body#home_page  a.home_page,
+			body#about_me   a.about_me,
+			body#my_courses a.my_courses,
+			body#contact_me a.contact_me {
+				background-color  : #50AB42; /* color-primary-3 */
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+			
+			section {
+				border-right      : 1px dotted gray;
+				}
+			section article,
+			aside   article {
+				background-color  : #CCF0C6; /* color-primary-1 */
+				border            : 1px solid gray;
+				}
+			article  {
+				color             : #338E25; /* color-primary-4 */
+				}
+				
+			footer {
+				border-top        : 1px solid gray;
+				}
+			footer a {
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+
+			img {
+				background-color : #A2E099; /* color-primary-2 */
+				border           : solid 5px white;
+				}
+			nav a:hover {
+				background-color  : #338E25; /* color-primary-4 */
+				color             : #CCF0C6; /* color-primary-1 */
+			}
+			footer a:hover {
+				text-decoration : underline;
+				}
+	
+		}
+
+		@media print {
+		
+			body {
+				margin         :  .5in 1in; 
+				background     :   white;
+				color          :   black;
+				width          :   8.5in;
+				height         :   11in;
+				font           :   12pt/1.2em "Times New Roman", Times, serif;
+				}
+			header {
+				text-align     :  center;
+				display        :  flex;
+				flex-direction :  column;
+				margin-bottom  :  .5in;
+				border-bottom  :  1px dotted gray;
+				}
+				
+			nav, aside, footer {
+				display         : none;
+			}
+
+			a {
+				color           :  blue;
+				text-decoration :  underline;
+			}
+
+			a:link:after {
+				content         :  " [" attr(href) "] ";
+				font-size       : .9em;
+			}
+			
+			img {
+				background-color :  #A2E099;
+				border           :  1px solid black;
+				width            :  100px;
+				height           :  100px;
+				}
+
+		}
+
+
+  </style>
+
+	<!-- Link to JavaScript or jQuery goes here       -->
+	<!-- Internal JavaScript or jQuery code goes here -->
+	
+</head>
+
+<body id="my_courses">
+
+	<!-- Outer layer wrapper -->
+	<div id="page">
+
+		<!-- Begin header -->
+		<header>
+		   <hgroup>
+			<!-- Main header                -->
+			<h1>My Courses</h1>
+			<h2>Srilatha Mada</h2>
+		   </hgroup>
+			<!-- Main navigation list -->
+			<nav>
+				<ul>
+					<!-- class name MUST match body id for page -->
+					<li><a href="index.html" class="home_page" >Home Page </a></li>
+					<li><a href="about.html" class="about_me" >About Me  </a></li>
+					<li><a href="courses.html" class="my_courses" >My Courses</a></li>
+					<li><a href="contact.html" class="contact_me" >Contact Me</a></li>
+
+				</ul>
+			</nav><!-- end nav -->
+		
+		</header><!-- end header -->
+	
+		<!-- Main section and aside content -->
+		<div id="content">
+	
+			<section>
+	
+				<h2>Courses</h2>
+		
+				<article>
+		
+					<h3>Course Taken 2016 to Date</h3>
+			
+					<p>
+					<table>
+			       	   <thead>
+						 <tr>
+							<th>Year</th>
+							<th>Term</th>
+							<th>Course Number</th>
+							<th>Section</th>
+							<th>Name</th>
+							<th>Room</th>
+							<th>Day</th>
+							<th>Times</th>
+							<th>Instructor</th>
+							<th>Grade</th>
+						 </tr>
+					   </thead>
+					   <tbody>
+						<tr>
+							<td>2016</td>
+							<td>Term 1</td>
+							<td>CS505</td>
+							<td>G</td>
+							<td>Computer Science 										Fundamentals</td>
+							<td>MEM-202</td>
+							<td>Wednesday</td>
+							<td>12:45 PM - 02:45 PM								</td>
+							<td>Wilkes, Charles Thomas								</td>
+							<td>TBA</td>
+	
+						</tr>
+						<tr>
+							<td>Fall16</td>
+							<td>Term 2</td>
+							<td>CS597</td>
+							<td>BH2</td>
+							<td>MULTIMEDIA AND WEB 									DEVELOPMENT</td>
+							<td>MEM-202</td>
+							<td>Wednesday</td>
+							<td>03:00 PM - 05:15 PM								</td>
+							<td>Cupak, John</td>
+							<td>TBA</td>
+	
+						</tr>
+					   	<tr>
+							<td>Fall16</td>
+							<td>Term 1</td>
+							<td>CS553</td>
+							<td>AH1</td>
+							<td>NETWORKING TECHNOLOGIES								</td>
+							<td>ED-305</td>
+							<td>Thursday</td>
+							<td>03:00 PM - 05:15 PM								</td>
+							<td>Khasnabish, Bhumip</td>
+							<td>A</td>
+	
+						</tr>
+					   </tbody>
+					   <tfoot align="right">
+						<tr>
+							<th>Average Grade:</th>
+							<td colspan="9">A</td>
+						</tr>
+						
+					   </tfoot>
+							
+
+					</table>
+							
+					</p>
+						
+				</article>
+		
+				<article>
+		
+					<h3>Future Courses</h3>
+			
+					<p>
+					<table>
+			       	   <thead>
+						 <tr>
+							<th>Year</th>
+							<th>Term</th>
+							<th>Course Number</th>
+							<th>Section</th>
+							<th>Name</th>
+							<th>Room</th>
+							<th>Day</th>
+							<th>Times</th>
+							<th>Instructor</th>
+							<th>Grade</th>
+						 </tr>
+					   </thead>
+					   <tbody align="right">
+						<tr>
+							<td>SP17</td>
+							<td>1</td>
+							<td>CS556</td>
+							<td>AH1</td>
+							<td>COMPUTER ARCHITECTURE								</td>
+							<td>STH-135</td>
+							<td>Tuesday</td>
+							<td>05:30 PM - 07:45 PM</td>
+							<td>Schaefer, Rober</td>
+							<td>TBA</td>
+						</tr>
+						<tr>
+							<td>SP17</td>
+							<td>1</td>
+							<td>CS585</td>
+							<td>A</td>
+							<td>JAVA PROGRAMMING									</td>
+							<td>MEM-202</td>
+							<td>Wednesday</td>
+							<td>12:45 PM - 02:45 PM</td>
+							<td>Selent, Douglas</td>
+							<td>TBA</td>
+						</tr>
+						<tr>
+							<td>SP17</td>
+							<td>2</td>
+							<td>CS616</td>
+							<td>AH2</td>
+							<td>DATA MINING										</td>
+							<td>MEM-202</td>
+							<td>Wednesday</td>
+							<td>03:00 PM - 05:15 PM</td>
+							<td>Filippov, Michael</td>
+							<td>TBA</td>
+						</tr>
+					   </tbody>
+					   <tfoot></tfoot>
+							
+					</table>
+							
+					</p>
+	
+						
+				</article>
+				
+			</section><!-- end section -->
+	
+			<!-- Sidebar -->
+			<aside>
+	
+				<!-- Aside header - level h2 -->
+				<h2>Other Studies</h2>
+				
+				<!-- Non-navigation links to other information -->
+				<ul>
+					<li><a href="https://www.tutorialspoint.com/hadoop" target="_blank">Hadoop</a></li>
+					<li><a href="https://developers.google.com/edu/python/introduction" target="_blank">Python</a></li>
+				</ul>
+		
+			</aside><!-- end aside -->
+	
+		</div><!-- end #content -->
+	
+		</div><!-- end #page -->
+		<!-- Main footer -->
+		<footer>
+	
+			<h3>Copyright&nbsp;&copy;&nbsp; 2016 
+			<a href="mailto:smada@rivier.edu">smada@rivier.edu	</a></h3>
+		
+			<h4>CS597 Multimedia and Web Development <span>				BH2 FA16</span></h4>
+		
+		</footer><!-- end footer -->
+
+
+
+	
+
+</body>
+
+</html>
